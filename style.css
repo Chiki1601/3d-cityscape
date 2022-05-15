@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #00082f 0%, #4ad6ff 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cityscape {
+  position: absolute;
+  max-height: 100%;
+}
+
+.HOVA-car {
+  opacity: 0;
+  transform: translatey(45px) translatex(-70px);
+}
+
+.lights-fade {
+  animation: fill 10s linear infinite;
+}
+
+.lights-fade-reverse {
+  animation: fill 10s linear reverse infinite;
+}
+
+@keyframes fill {
+  0% {
+    fill: #00001E;
+  }
+  33% {
+    fill: #F0F;
+  }
+  50% {
+    fill: #00001E;
+  }
+  66% {
+    fill: #0FF;
+  }
+  100% {
+    fill: #00001E;
+  }
+}
+.doodle {
+  z-index: 1;
+}
